@@ -3,19 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Guess the Number Game">
   <link rel="stylesheet" href="styles.css">
   <title>Guess the Number Game</title>
 </head>
 <body>
-  <div class="container">
+  <header>
     <h1>Guess the Number Game</h1>
+  </header>
+  <main class="container">
     <p>Try to guess the number between 1 and 100.</p>
     <input type="number" id="guessInput" placeholder="Enter your guess">
-    <button onclick="checkGuess()">Submit Guess</button>
-    <button onclick="restartGame()">Restart</button>
-    <button onclick="endGame()">End Game</button>
+    <button id="submitGuessBtn">Submit Guess</button>
+    <button id="restartGameBtn">Restart</button>
+    <button id="endGameBtn">End Game</button>
     <p id="message"></p>
-  </div>
+  </main>
   <script src="script.js"></script>
 </body>
 </html>
